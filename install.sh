@@ -7,7 +7,7 @@ if ((EUID != 0)); then
   sudo='sudo'
 fi
 
-copy_system_file() {
+function copy_system_file() {
   local src=$1
   local dest=$2
 
